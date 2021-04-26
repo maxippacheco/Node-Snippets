@@ -1,0 +1,28 @@
+	"Node Controllers": {
+		"prefix": "ctl",
+		"body": [
+			"const { response } = require('express');",
+			"",
+			"const $TM_FILENAME_BASE = (req, res = response) => {",
+			"\tres.json({",
+			"\t\tmsg:'Hola mundo'",
+			"\t})",
+			"}",
+			"",
+			"module.exports({",
+			"\t\t$TM_FILENAME_BASE",
+			"});"
+		]
+	},
+
+	"Node Routes": {
+		"prefix": "rt",
+		"body": [
+			"const { Router } = require('express');",
+			"",
+			"const router = Router();",
+			"",
+			"module.exports= router;"
+
+		]
+	},
